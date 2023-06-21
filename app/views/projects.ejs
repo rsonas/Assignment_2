@@ -1,0 +1,44 @@
+<!--
+
+    File: projects.ejs
+    Aislinn Richardson
+    301146892
+    May 30 2023
+
+-->
+
+<!DOCTYPE html>
+
+<html>  
+    <head>    
+        <title><%= title %></title>  
+        <link rel="stylesheet" href="/content/index.css">
+        <link rel="stylesheet" href="/content/projects.css">
+    </head>  
+    <body>   
+        <!-- Main navigation bar-->
+        <%- include ('partials/navbar.ejs') %>
+        
+        <h1 style = "text-align:center"><%= title %></h1>
+
+        <!-- Columns for each project -->
+        <div class = "container">
+            <div class = "Column" id = "column3">
+                <p style = "font-weight: bold; font-size: medium"><%-p1%></p>
+                <p><%-p2%></p>
+                <img src = "/img/PROJ_1_4.png" class="column-image">
+            </div>
+            <div class = "Column" id = "column3">
+                <p style = "font-weight: bold; font-size: medium"><%-p3%></p>
+                <p><%-p4%></p>
+                <img src = "/img/PROJ_2_1.png" class="column-image">
+            </div>
+            <div class = "Column" id = "column3">
+                <p style = "font-weight: bold; font-size: medium"><%-p5%></p>
+                <p><%-p6%></p>
+                <img src = "/img/PROJ_3_1.png" class="column-image">
+            </div>
+        </div>
+
+    </body>
+</html>

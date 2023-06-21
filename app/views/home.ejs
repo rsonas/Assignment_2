@@ -1,0 +1,39 @@
+<!--
+
+    File: home.ejs
+    Aislinn Richardson
+    301146892
+    May 30 2023
+
+-->
+
+<!DOCTYPE html>
+
+<html>  
+    
+    <head>    
+        <title><%= title %></title>  
+        <link rel="stylesheet" href="/content/index.css">
+        <link rel="stylesheet" href="/content/home.css">
+
+    </head>  
+    <body>   
+
+    <!-- Main navigation bar-->
+    <%- include ('partials/navbar.ejs') %>
+        <h1 style = "text-align: center"><%= title %> Page</h1>
+        <p style = "text-align: center"><%- h1%></p>
+        <p style = "text-align: center"><%- p1%></p>
+
+        <!-- Button menu for navigation -->
+        <div id = "buttons">
+            <fieldset>
+                <button onclick = "window.location.href= '/about'">About Me</button>
+                <button onclick = "window.location.href= '/contact'">Contact Me</button>
+                <button onclick = "window.location.href = '/projects'">Portfolio</button>
+            </fieldset>
+            
+        </div>
+        
+    </body>
+</html>

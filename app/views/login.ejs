@@ -1,0 +1,48 @@
+<!--
+
+    File: index.ejs
+    Aislinn Richardson
+    301146892
+    June 10, 2023
+
+-->
+
+<!DOCTYPE html>
+
+<html>  
+    <head>    
+        <title><%= title %></title>  
+        <link rel="stylesheet" href="/content/index.css">
+
+    </head>  
+    <body>   
+        <!-- Main navigation bar-->
+        <%- include ('partials/navbar.ejs') %>
+        
+        <h1 style = "text-align:center">Welcome to <%= title %></h1>
+        <p style = "text-align:center; font-weight: heavy"><%- h1%></p>
+
+        <div id="mainContent">
+            <h1 id="header" style="text-align: center;"><%= title %></h1>
+            <p style="text-align: center;"><%- h1 %></p>
+
+            <fieldset>
+            <!-- Form to submit information -->
+            <form id="loginForm">
+                <label for="user">Username</label>
+                <input type="text" id="user" required minlength='3' maxlength='15'><br><br>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" required minlength='3' maxlength='15'><br><br>
+                
+                <label for="password">Password</label>
+                <input type="text" id="password" required minlength='4' maxlength='30'><br><br>
+
+                <button class="button" id="login" onclick="login()">Log in:</button>
+            </form>
+            </fieldset>
+
+        </div>
+
+    </body>
+</html>

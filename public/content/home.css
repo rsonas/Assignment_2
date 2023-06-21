@@ -1,0 +1,26 @@
+/*
+    File: home.css
+    Aislinn Richardson
+    301146892
+    Date: May 28 2023
+*/
+
+fieldset {
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin: 20px auto;
+    object-position: center;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+
